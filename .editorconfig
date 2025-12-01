@@ -1,0 +1,40 @@
+# .editorconfig
+# Helps maintain consistent coding styles between different editors and IDEs
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Match files that should use 4-space indentation (optional, e.g., YAML)
+[*.{yml,yaml}]
+indent_size = 2
+
+# JSON files
+[*.json]
+indent_size = 2
+
+# Markdown files — don’t trim trailing spaces (used for line breaks)
+[*.md]
+trim_trailing_whitespace = false
+
+# Shell scripts
+[*.sh]
+end_of_line = lf
+indent_style = space
+indent_size = 2
+
+# Gitignore files
+[.gitignore]
+insert_final_newline = true
+
+# Env files
+[*.env]
+indent_style = none
+insert_final_newline = false
+trim_trailing_whitespace = false
