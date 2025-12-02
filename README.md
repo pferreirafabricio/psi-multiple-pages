@@ -13,8 +13,9 @@ This project enables bulk performance analysis by running PageSpeed Insights tes
 - 🚀 Parallel processing of multiple URLs for faster analysis
 - 📊 Fetches performance data from Google PageSpeed Insights API
 - 📱 Supports both mobile and desktop analysis
-- 📈 Generates comparative HTML reports with performance metrics
+- 📈 Generates comparative reports in HTML or XLSX format
 - 🔄 Compare performance across multiple pages side-by-side
+- 📊 Excel export for easy data analysis and sharing
 - 🎨 Clean, formatted output using Handlebars templates
 - 🔧 TypeScript for type safety and better developer experience
 
@@ -46,19 +47,28 @@ PSI_API_KEY=your_api_key_here
 
 ## Usage
 
-Run the tool:
+Run the tool with HTML output (default):
 
 ```bash
 npm start
+# or
+npm run start:html
 ```
 
-Build the project:
+Run the tool with XLSX (Excel) output:
 
 ```bash
-npm run build
+npm run start:xlsx
 ```
 
-The generated report will be saved in the [`output`](output) directory as `report.html`.
+Or use the format flag directly:
+
+```bash
+npm start -- --format=html
+npm start -- --format=xlsx
+```
+
+The generated report will be saved in the [`output`](output) directory as either `report.html` or `report.xlsx`.
 
 ## Project Structure
 

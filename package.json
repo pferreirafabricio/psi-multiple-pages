@@ -3,16 +3,19 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "node --loader ts-node/esm src/index.ts"
+    "start": "node --loader ts-node/esm src/index.ts",
+    "start:html": "node --loader ts-node/esm src/index.ts --format=html",
+    "start:xlsx": "node --loader ts-node/esm src/index.ts --format=xlsx"
   },
   "dependencies": {
     "axios": "^1.6.7",
     "dotenv": "^16.4.5",
-    "handlebars": "^4.7.8"
+    "handlebars": "^4.7.8",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "typescript": "^5.3.3",
+    "@types/node": "^20.19.25",
     "ts-node": "^10.9.2",
-    "@types/node": "^20.0.0"
+    "typescript": "^5.3.3"
   }
 }
