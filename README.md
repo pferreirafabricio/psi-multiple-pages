@@ -47,6 +47,14 @@ PSI_API_KEY=your_api_key_here
 
 ## Usage
 
+Edit the `src/config/index.ts` file to add the pages you want to analyze.
+
+```typescript
+const pageSlugs = [
+  'about'
+];
+```
+
 Run the tool with HTML output (default):
 
 ```bash
@@ -82,12 +90,6 @@ The generated report will be saved in the [`output`](output) directory as either
 ├── .env.example              # Environment variables template
 └── tsconfig.json             # TypeScript configuration
 ```
-
-## Configuration
-
-Environment variables can be configured in the `.env` file:
-
-- `PSI_API_KEY`: Your Google PageSpeed Insights API key
 
 ## License
 
